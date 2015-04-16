@@ -46,13 +46,13 @@ ko.bindingHandlers.statusbars = {
       statusbar.info = function(msg, append) {
         if (self.statusbars.indexOf(statusbar) == -1)
           self.statusbars.push(statusbar);
-        statusbar.message(append ? statusbar.message() + ': ' + msg : msg);
+        statusbar.message(append ? statusbar.message() + ' ' + msg : msg);
         statusbar.css(self.css_mappings.info);
       };
       statusbar.error = function(msg, append) {
         if (self.statusbars.indexOf(statusbar) == -1)
           self.statusbars.push(statusbar);
-        statusbar.message(append ? statusbar.message() + ': ' + msg : msg);
+        statusbar.message(append ? statusbar.message() + ' ' + msg : msg);
         statusbar.css(self.css_mappings.error);
       };
       statusbar.close = function() {
